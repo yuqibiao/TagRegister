@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_office"
+        style="@style/base_tb" >
+        <ImageButton
+            android:id="@+id/ib_nav_lit"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:onClick="back"
+            android:src="@mipmap/nav_back" />
+
+        <TextView
+            style="@style/base_tv"
+            android:text="仓库选择"
+            android:textColor="@color/colorWhite"/>
+    </android.support.v7.widget.Toolbar>
+
+    <fragment
+        android:id="@+id/fragment_wash_factory_choice"
+        android:name="com.afrid.tag_register.ui.fragment.WashFactoryChoiceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
